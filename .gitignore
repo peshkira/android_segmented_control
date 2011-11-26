@@ -1,0 +1,9 @@
+.DS_Store
+bin/
+gen/
+.apt_generated/
+.project
+.classpath
+.settings/
+default.properties
+tmp/

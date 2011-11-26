@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="SegmentedControl">
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="SmallSegmentedFilter">
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    
+    <style name="BigSegmentedFilter" parent="@style/SmallSegmentedFilter">
+        <item name="android:minHeight">35dp</item>        
+    </style>
+</resources>

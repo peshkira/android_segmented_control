@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="green_top_selected">#496800</color>
+    <color name="green_bottom_selected">#89B531</color>
+    <color name="green_top_unselected">#8EC41C</color>
+    <color name="green_bottom_unselected">#334900</color>
+    <color name="grey_separator">#919191</color>
+</resources>
