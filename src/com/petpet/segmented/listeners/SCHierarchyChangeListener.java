@@ -20,7 +20,6 @@ public class SCHierarchyChangeListener implements OnHierarchyChangeListener {
     @Override
     public void onChildViewAdded(View parent, View child) {
         this.registerChangeListener(parent, child, true);
-
     }
 
     @Override

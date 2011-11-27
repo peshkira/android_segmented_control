@@ -1,24 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-<!-- 
-    <item 
-        android:right="5dp"
-        android:bottom="5dp" >
-        <shape android:shape="rectangle">
-            <solid android:color="@color/green_top_unselected" />
-            
-        </shape>
-    </item>
-    
-   <item 
-        android:right="5dp"
-        android:top="5dp" >
-        <shape android:shape="rectangle">
-            <solid android:color="@color/green_bottom_unselected" />
-            
-        </shape>
-    </item>   
-     -->
     <item>
         <shape>
             <padding android:top="2dp" android:bottom="2dp" />

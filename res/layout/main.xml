@@ -2,14 +2,17 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical" android:background="#FFF">
 
     <com.petpet.segmented.widget.SegmentedControl
         android:id="@+id/widget_segmented_control"
         style="@style/SegmentedControl">
         
-        <Button android:id="@+id/option_filter1" android:text="Filter 1" style="@style/SmallSegmentedFilter"/>
-        <Button android:id="@+id/option_filter2" android:text="Filter 2" style="@style/SmallSegmentedFilter"/>
+        <Button android:id="@+id/option_filter1" android:text="Filter 1" style="@style/SmallSegmentedFilter" />
+        <View style="@style/VerticalLine" />
+        <Button android:id="@+id/option_filter2" android:text="Filter 2" style="@style/SmallSegmentedFilter" />
+        <View style="@style/VerticalLine" />
+        <Button android:id="@+id/option_filter3" android:text="Filter 3" style="@style/SmallSegmentedFilter" />
         
     </com.petpet.segmented.widget.SegmentedControl>
 
