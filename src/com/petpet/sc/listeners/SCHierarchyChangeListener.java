@@ -19,25 +19,57 @@ public class SCHierarchyChangeListener implements OnHierarchyChangeListener {
 
     @Override
     public void onChildViewAdded(View parent, View child) {
-        this.registerChangeListener(parent, child, true);
+        this.register(parent, child, true);
     }
 
     @Override
     public void onChildViewRemoved(View parent, View child) {
-        this.registerChangeListener(parent, child, false);
+        this.register(parent, child, false);
     }
 
-    private void registerChangeListener(View parent, View child, boolean register) {
+    private void register(View parent, View child, boolean register) {
         if (parent.getId() == this.sc.getId() && child instanceof Button) {
 
             final Button btn = (Button) child;
 
             if (register)
-                btn.setOnClickListener(stateListener);
+                btn.setOnTouchListener(stateListener);
             else
-                btn.setOnClickListener(null);
-            
+                btn.setOnTouchListener(null);
+
+            addBtnState();
             this.sc.stateChanged(null);
+        }
+    }
+
+    private void addBtnState() {
+        int count = this.sc.getChildCount();
+
+        if (count == 0) {
+            return;
+        }
+
+        if (count == 1) {
+            View v = this.sc.getChildAt(0);
+            if (v instanceof Button) {
+                ((Button) v).setBackgroundResource(this.sc.getMiddleState());
+            }
+        }
+
+        for (int i = 0; i < count; i++) {
+            View v = this.sc.getChildAt(i);
+
+            if (v instanceof Button) {
+                if (i == 0) {
+                    ((Button) v).setBackgroundResource(this.sc.getLeftState());
+
+                } else if (i == count - 1) {
+                    ((Button) v).setBackgroundResource(this.sc.getRightState());
+
+                } else {
+                    ((Button) v).setBackgroundResource(this.sc.getMiddleState());
+                }
+            }
         }
     }
 }
