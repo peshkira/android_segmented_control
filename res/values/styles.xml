@@ -9,7 +9,7 @@
         <item name="android:orientation">horizontal</item>
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:background">@drawable/segmented_control_border</item>
+        <item name="android:background">@drawable/sc_border</item>
     </style>
 
     <style name="SmallSegmentedFilter">
@@ -31,6 +31,6 @@
     <style name="VerticalLine">
         <item name="android:layout_width">1dp</item>
         <item name="android:layout_height">fill_parent</item>
-        <item name="android:background">@color/grey_separator</item>
+        <item name="android:background">@color/sc_separator</item>
     </style>
 </resources>

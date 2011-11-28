@@ -4,9 +4,7 @@
     android:layout_height="fill_parent"
     android:orientation="vertical" android:background="#FFF">
 
-    <com.petpet.segmented.widget.SegmentedControl
-        android:id="@+id/widget_segmented_control"
-        style="@style/SegmentedControl">
+    <com.petpet.sc.widget.SegmentedControl android:id="@+id/widget_segmented_control" style="@style/SegmentedControl">
         
         <Button android:id="@+id/option_filter1" android:text="Filter 1" style="@style/SmallSegmentedFilter" />
         <View style="@style/VerticalLine" />
@@ -14,6 +12,6 @@
         <View style="@style/VerticalLine" />
         <Button android:id="@+id/option_filter3" android:text="Filter 3" style="@style/SmallSegmentedFilter" />
         
-    </com.petpet.segmented.widget.SegmentedControl>
+    </com.petpet.sc.widget.SegmentedControl>
 
 </LinearLayout>

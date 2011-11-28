@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!-- <item 
+    <item 
         android:right="5dp"
         android:bottom="5dp" >
         <shape android:shape="rectangle">
-            <solid android:color="@color/green_top_selected" />
+            <solid android:color="@color/sc_top_selected" />
         </shape>
     </item>
     
@@ -13,15 +13,18 @@
         android:right="5dp"
         android:top="5dp" >
         <shape android:shape="rectangle">
-            <solid android:color="@color/green_bottom_selected" />
+            <solid android:color="@color/sc_bottom_selected" />
         </shape>
     </item>   
-     -->
+    
     <item>
         <shape>
             <padding android:top="2dp" android:bottom="2dp" />
-            <gradient android:startColor="@color/green_top_selected" android:endColor="@color/green_bottom_selected"
+            <gradient android:startColor="@color/sc_top_selected" android:endColor="@color/sc_bottom_selected"
                 android:angle="270" />
+            <corners android:bottomRightRadius="2dp"
+                android:bottomLeftRadius="2dp" android:topLeftRadius="2dp"
+                android:topRightRadius="2dp" />
         </shape>
     </item>
 </layer-list>

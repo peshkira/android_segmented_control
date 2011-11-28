@@ -1,4 +1,4 @@
-package com.petpet.segmented;
+package com.petpet.sc;
 
 import android.app.Activity;
 import android.os.Bundle;

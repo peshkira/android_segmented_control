@@ -5,7 +5,7 @@
         android:right="5dp"
         android:bottom="5dp" >
         <shape android:shape="rectangle">
-            <solid android:color="@color/green_top_unselected" />
+            <solid android:color="@color/sc_top_unselected" />
             
         </shape>
     </item>
@@ -14,7 +14,7 @@
         android:right="5dp"
         android:top="5dp" >
         <shape android:shape="rectangle">
-            <solid android:color="@color/green_bottom_unselected" />
+            <solid android:color="@color/sc_bottom_unselected" />
             
         </shape>
     </item>   
@@ -22,7 +22,7 @@
     <item>
         <shape>
             <padding android:top="2dp" android:bottom="2dp" />
-            <gradient android:startColor="@color/green_top_unselected" android:endColor="@color/green_bottom_unselected"
+            <gradient android:startColor="@color/sc_top_unselected" android:endColor="@color/sc_bottom_unselected"
                 android:angle="270" />
             <corners android:bottomRightRadius="2dp"
                 android:bottomLeftRadius="2dp" android:topLeftRadius="2dp"

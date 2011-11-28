@@ -1,9 +1,9 @@
-package com.petpet.segmented.listeners;
+package com.petpet.sc.listeners;
 
 import android.view.View;
 import android.view.View.OnClickListener;
 
-import com.petpet.segmented.widget.SegmentedControl;
+import com.petpet.sc.widget.SegmentedControl;
 
 public class SCStateChangedListener implements OnClickListener {
 

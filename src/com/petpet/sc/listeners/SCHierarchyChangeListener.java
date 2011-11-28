@@ -1,10 +1,10 @@
-package com.petpet.segmented.listeners;
+package com.petpet.sc.listeners;
 
 import android.view.View;
 import android.view.ViewGroup.OnHierarchyChangeListener;
 import android.widget.Button;
 
-import com.petpet.segmented.widget.SegmentedControl;
+import com.petpet.sc.widget.SegmentedControl;
 
 public class SCHierarchyChangeListener implements OnHierarchyChangeListener {
 
