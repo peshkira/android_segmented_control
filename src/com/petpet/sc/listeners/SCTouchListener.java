@@ -7,11 +7,11 @@ import android.widget.Button;
 
 import com.petpet.sc.widget.SegmentedControl;
 
-public class SCStateChangedListener implements OnTouchListener {
+public class SCTouchListener implements OnTouchListener {
 
     private SegmentedControl sc;
     
-    public SCStateChangedListener(SegmentedControl sc) {
+    public SCTouchListener(SegmentedControl sc) {
         this.sc = sc;
     }
     

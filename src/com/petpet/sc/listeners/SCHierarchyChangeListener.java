@@ -10,11 +10,11 @@ public class SCHierarchyChangeListener implements OnHierarchyChangeListener {
 
     private SegmentedControl sc;
 
-    private SCStateChangedListener stateListener;
+    private SCTouchListener stateListener;
 
     public SCHierarchyChangeListener(final SegmentedControl sc) {
         this.sc = sc;
-        this.stateListener = new SCStateChangedListener(this.sc);
+        this.stateListener = new SCTouchListener(this.sc);
     }
 
     @Override
