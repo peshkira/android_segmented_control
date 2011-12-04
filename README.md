@@ -14,7 +14,7 @@ as it needs references to the R file and the resources.
 You can create as many buttons as you like, but I recommend to keep them under 5. By default the first (left most) button is selected and the 
 labels of the buttons are trimmed if their length is longer than 10 characters. You can overwrite this behavior (see the examples).
 
- ** Basic Usage **
+ **Basic Usage**
 
 ``` xml
 <com.petpet.sc.widget.SegmentedControl
@@ -36,7 +36,7 @@ labels of the buttons are trimmed if their length is longer than 10 characters. 
         </com.petpet.sc.widget.SegmentedControl>
 ```
 
- ** Overwrite Default Behaviour **
+ **Overwrite Default Behaviour**
 
 include this into your layout namespaces:
 
@@ -61,12 +61,13 @@ xmlns:sc="http://schemas.android.com/apk/res/com.petpet.sc"
         </com.petpet.sc.widget.SegmentedControl>
 ```
 
- ** Change Styles **
+ **Change Styles**
 
 If you like to have the bigger buttons then use @style/BigSegmentedFilter.
 In order to change the coloring scheme you can edit the colors in res/values/sc_values.xml.
 There are some predefined color schemes, but you can use whatever colors you like. Just change
 the values of the following colors:
+
  ``` xml 
     <color name="sc_top_selected">...</color>
     <color name="sc_bottom_selected">...</color>
