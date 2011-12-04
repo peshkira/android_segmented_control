@@ -17,7 +17,13 @@ public class SCTouchListener implements OnTouchListener {
     
     @Override
     public boolean onTouch(View v, MotionEvent e) {
-        this.sc.stateChanged((Button) v);
-        return true;
+        boolean processed = false;
+
+        if (e.getAction() == MotionEvent.ACTION_UP) {
+            this.sc.stateChanged((Button) v);
+            processed = true;
+        }
+        
+        return processed;
     }
 }

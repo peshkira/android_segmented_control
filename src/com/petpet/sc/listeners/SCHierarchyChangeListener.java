@@ -31,14 +31,24 @@ public class SCHierarchyChangeListener implements OnHierarchyChangeListener {
         if (parent.getId() == this.sc.getId() && child instanceof Button) {
 
             final Button btn = (Button) child;
-
             if (register)
                 btn.setOnTouchListener(stateListener);
             else
                 btn.setOnTouchListener(null);
 
             addBtnState();
+            trimText(btn);
             this.sc.stateChanged(null);
+        }
+    }
+
+    private void trimText(Button btn) {
+        String label = btn.getText().toString();
+        int maxLength = this.sc.getMaxLength();
+        if (label.length() > maxLength) {
+            label = label.substring(0, maxLength - 3);
+            label += "...";
+            btn.setText(label);
         }
     }
 

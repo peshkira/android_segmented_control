@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+     <!-- ############ DECLARED ATTRIBUTES ############# -->
+    <declare-styleable name="SegmentedControl">
+        <attr name="label_maxlength" format="integer" />          
+        <attr name="first_selected" format="boolean" />
+    </declare-styleable>
+    
+    <!-- ############ STYLES ############# -->
+     <style name="SegmentedControl">
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:padding">1dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/sc_border</item>
+    </style>
+
+    <style name="SmallSegmentedFilter">
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    
+    <style name="BigSegmentedFilter" parent="@style/SmallSegmentedFilter">
+        <item name="android:minHeight">35dp</item>        
+    </style>
+    
+    <style name="VerticalLine">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">@color/sc_separator</item>
+    </style>
+    
+    <!-- ############ COLORS ############# -->
+    <!-- change these colors to change the buttons -->
+    <color name="sc_top_selected">#8F1C18</color>
+    <color name="sc_bottom_selected">#7E1815</color>
+    <color name="sc_top_unselected">#C42921</color>
+    <color name="sc_bottom_unselected">#AE231D</color>
+    <color name="sc_separator">#717171</color>
+    
+    <!-- some predefined colors that you can use to build nice buttons -->
+    <!-- 
+        // red
+     <color name="sc_top_selected">#8F1C18</color>
+     <color name="sc_bottom_selected">#7E1815</color>
+     <color name="sc_top_unselected">#C42921</color>
+     <color name="sc_bottom_unselected">#AE231D</color>
+     <color name="sc_separator">#717171</color>
+     -->
+    <!-- 
+        // blue
+    <color name="sc_top_selected">#2F4487</color>
+    <color name="sc_bottom_selected">#202E5C</color>
+    <color name="sc_top_unselected">#3A55B2</color>
+    <color name="sc_bottom_unselected">#2F4595</color>
+    <color name="sc_separator">#717171</color>
+     -->
+    <!-- 
+        // green
+    <color name="sc_top_selected">#496800</color>
+    <color name="sc_bottom_selected">#89B531</color>
+    <color name="sc_top_unselected">#8EC41C</color>
+    <color name="sc_bottom_unselected">#334900</color>
+    <color name="sc_separator">#717171</color>
+     -->
+     <!-- 
+        // grey 
+     <color name="sc_top_selected">#2F4487</color>
+     <color name="sc_bottom_selected">#202E5C</color>
+     <color name="sc_top_unselected">#3A55B2</color>
+     <color name="sc_bottom_unselected">#2F4595</color>  
+     <color name="sc_separator">#717171</color>      
+     -->
+</resources>
