@@ -17,10 +17,12 @@ public class SCTouchListener implements OnTouchListener {
     
     @Override
     public boolean onTouch(View v, MotionEvent e) {
+        System.out.println("touched segmented outer");
         boolean processed = false;
-
         if (e.getAction() == MotionEvent.ACTION_UP) {
+            System.out.println("touched segmented");
             this.sc.stateChanged((Button) v);
+            v.performClick();
             processed = true;
         }
         
