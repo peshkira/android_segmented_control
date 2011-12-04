@@ -4,6 +4,8 @@ A little widget to create an iOS-like Segmented Control for android.
 The segmented control widget in iOS is sometimes great and isn't very different then a beautiful styled radio button.
 I created a little widget, that imitates that behavior. It creates buttons and styles their edges accordingly.
 
+[![](http://petarpetrov.org/android/sc_demo.png)]
+
 USAGE
 -----------
 Checkout this project and add it as an android library to your project. Unfortunately, due to Android limitations I cannot make a jar library out of this,
