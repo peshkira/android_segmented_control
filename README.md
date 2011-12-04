@@ -13,6 +13,7 @@ You can create as many buttons as you like, but I recommend to keep them under 5
 labels of the buttons are trimmed if their length is longer than 10 characters. You can overwrite this behavior (see the examples).
 
 ** Basic Usage **
+
 ``` xml
 <com.petpet.sc.widget.SegmentedControl
             android:id="@+id/segmented_control"
@@ -34,6 +35,7 @@ labels of the buttons are trimmed if their length is longer than 10 characters. 
 ```
 
 ** Overwrite Default Behaviour **
+
 include this into your layout namespaces:
 
 ``` xml
@@ -45,12 +47,14 @@ xmlns:sc="http://schemas.android.com/apk/res/com.petpet.sc"
             android:id="@+id/segmented_control"
             style="@style/SegmentedControl">
 
+    <!-- first button not selected -->
+    <!-- max text length before trim = 15 characters -->
             <Button
                 android:id="@+id/filter1"
                 android:text="Filter 1" 
                 style="@style/SmallSegmentedFilter" 
-                sc:first_selected="false" <!-- first button not selected -->
-                sc:label_maxlength="15"/> <!-- max text length before trim = 15 characters -->
+                sc:first_selected="false"
+                sc:label_maxlength="15"/>
                 
         </com.petpet.sc.widget.SegmentedControl>
 ```
